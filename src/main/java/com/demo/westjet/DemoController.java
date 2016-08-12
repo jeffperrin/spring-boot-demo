@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-    @RequestMapping("/demo")
+    @RequestMapping("/")
     public String soRestful(@RequestParam(value = "name", defaultValue = "World") String name){
-
         return "Hello " + name;
     }
 }
